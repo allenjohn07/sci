@@ -1,6 +1,6 @@
 export default function AboutUs() {
     return (
-        <div className="container max-w-screen-lg mx-auto px-4 md:px-8 py-5 md:py-14 gap-8">
+        <div className="container max-w-screen-lg mx-auto px-4 md:px-8 py-8 md:py-14 gap-8">
             <div className="text-left">
                 <h1 className="text-3xl sm:text-4xl font-bold mb-6">About Us</h1>
                 <p className="text-lg md:text-xl font-semibold">Who We Are</p>
@@ -22,7 +22,7 @@ export default function AboutUs() {
                     <span className="font-semibold">Community Building</span>: Our short-term goal includes launching a comprehensive website that will host state rankings, while our long-term vision includes creating an interactive platform featuring cubing news, blogs by cubers, and an engaging community space.
                 </p>
                 <p className="text-lg md:text-xl font-semibold">Why Choose Speedcubing India?</p>
-                <p className="mb-4">
+                <p>
                     By choosing to be a part of Speedcubing India, you are contributing to a larger movement that aims to elevate the cubing community in India. Together, we can ensure that every cuber in India has access to the resources, support, and opportunities they need to excel.
                 </p>
             </div>
