@@ -277,7 +277,7 @@ export function SciNavbar() {
                 variant="h4"
                 className="cursor-pointer text-sm md:text-lg hidden md:block"
               >
-                <span className="text-red-900">S</span>peed <span className="text-red-900">C</span>ubers <span className="text-red-900">I</span>ndia
+                <span className="text-red-900">S</span>peed<span className="text-red-900">C</span>ubers <span className="text-red-900">I</span>ndia
               </Typography>
             </div>
           </a>
