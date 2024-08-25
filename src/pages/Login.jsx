@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 
 export default function Login() {
   return (
-    <div className="flex items-center justify-center px-10">
+    <div className="flex items-center justify-center px-10 my-24 md:my-32">
       <Card className="max-w-[400px]">
         <CardHeader>
           <CardTitle className="text-2xl">Welcome back</CardTitle>

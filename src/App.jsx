@@ -9,16 +9,18 @@ import Login from './pages/Login'
 
 const App = () => {
   return (
-    <div className='flex flex-col justify-between min-h-screen'>
+    <div>
       <Router>
-        <SciNavbar />
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/ranking' element={<Ranking />} />
-          <Route path='/login' element={<Login />} />
-        </Routes>
-        <SciFooter/>
+        <div className='sticky top-0 z-50'><SciNavbar /></div>
+        <div className='min-h-screen flex flex-col justify-between'>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/ranking' element={<Ranking />} />
+            <Route path='/login' element={<Login />} />
+          </Routes>
+        </div>
+        <SciFooter />
       </Router>
     </div>
   )
