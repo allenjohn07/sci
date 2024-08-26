@@ -207,7 +207,7 @@ function NavList({ handleNavClose }) {
   const [selectedLink, setSelectedLink] = useState(useLocation().pathname)
 
   return (
-    <List className="lg:flex-row space-y-2 lg:space-y-0 my-2">
+    <List className="lg:flex-row items-end space-y-2 lg:space-y-0 my-2 md:my-4">
       <Link onClick={() => setSelectedLink("/")} to={"/"}>
         <Typography onClick={() => handleNavClose()}
           variant="small"
@@ -264,11 +264,11 @@ export function SciNavbar() {
   }, []);
 
   return (
-    <div className="flex items-center justify-center shadow-sm">
-      <Navbar className="rounded-none max-w-full shadow-none">
+    <div className="flex relative items-center justify-center shadow-sm">
+      <Navbar className="rounded-none max-w-screen-lg shadow-none">
         <div className="flex items-center justify-between text-blue-gray-900">
           <a href={"/"}>
-            <div className="flex items-center h-10 my-2">
+            <div className="flex absolute top-2 md:top-4 left-4 md:left-2 items-center h-10 my-2">
               {/* for larger screens */}
               <img className="w-[80px] hidden md:block" src={logo} alt="SCI-Logo" />
               {/* for smaller screens */}

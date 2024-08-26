@@ -1,10 +1,10 @@
-import AboutUs from '@/components/aboutUs'
+import AboutComponent from '@/components/about'
 import React from 'react'
 
 const About = () => {
   return (
     <div>
-        <AboutUs/>
+        <AboutComponent/>
     </div>
   )
 }
