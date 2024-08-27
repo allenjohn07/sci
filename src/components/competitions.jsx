@@ -25,6 +25,18 @@ const Competitions = ({ title }) => {
         {
             compImg: comp3,
             name: "Selam Summer Open 2024"
+        },
+        {
+            compImg: comp1,
+            name: "Kumaraguru Open 2024"
+        },
+        {
+            compImg: comp2,
+            name: "TamilNadu Cube Challenge 2024"
+        },
+        {
+            compImg: comp3,
+            name: "Selam Summer Open 2024"
         }
     ]
 

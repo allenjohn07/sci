@@ -18,12 +18,14 @@ const HomeComponent = () => {
         <span className='scroll-m-20 mb-10 border-b pb-2 text-2xl font-semibold tracking-tight first:mt-0'>WCA Regional Organisation</span>
 
       </h2>
-      <div className='pb-5'><YouTube opts={opts} videoId='yGpSOCBbPvk' /></div>
+      <div className='pb-5'>
+        <YouTube opts={opts} videoId='yGpSOCBbPvk' />
+      </div>
       <div className='space-y-10 pb-5'>
         <Competitions title={"Upcoming Competitions"} />
         <Competitions title={"Past Competitions"} />
       </div>
-      <MoreLinks/>
+      <MoreLinks />
     </div>
   )
 }
