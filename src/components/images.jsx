@@ -1,28 +1,27 @@
 import * as React from "react"
-
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"
 import { Image } from "@nextui-org/react"
 
 export const images = [
   {
     id: "1",
-    path: "src/assets/images/DSC09967.jpg",
+    path: "/images/DSC09967.jpg",
   },
   {
     id: "2",
-    path: "src/assets/images/Copy of IMG_1103.JPG",
+    path: "/images/IMG_1103.JPG",
   },
   {
     id: "3",
-    path: "src/assets/images/DSC_0280.JPG",
+    path: "/images/DSC_0280.JPG",
   },
   {
     id: "4",
-    path: "src/assets/images/DSC09961.jpg",
+    path: "/images/DSC09961.jpg",
   },
   {
     id: "5",
-    path: "src/assets/images/DSC_0297.JPG",
+    path: "/images/DSC_0297.JPG",
   }
 ]
 
