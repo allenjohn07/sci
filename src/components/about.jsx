@@ -1,4 +1,12 @@
+import { useEffect } from "react";
+import { ImagesComponent } from "./images";
+
 export default function AboutComponent() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+
     return (
         <div className="container max-w-screen-lg mx-auto px-4 md:px-8 py-8 md:py-14">
             <div className="text-left">
@@ -27,6 +35,7 @@ export default function AboutComponent() {
                 </p>
             </div>
             <div/>
+            <ImagesComponent />
         </div>
     )
 }

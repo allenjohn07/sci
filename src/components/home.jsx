@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import YouTube from 'react-youtube';
 import Competitions from './competitions';
 import { MoreLinks } from './links';
 
 const HomeComponent = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const opts = {
     height: '390',
     width: '100%',

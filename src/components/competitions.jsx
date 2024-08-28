@@ -28,23 +28,20 @@ const Competitions = ({ title }) => {
         },
         {
             compImg: comp1,
-            name: "Kumaraguru Open 2024"
+            name: "Kumaraguru Open 2023"
         },
         {
             compImg: comp2,
-            name: "TamilNadu Cube Challenge 2024"
+            name: "TamilNadu Cube Challenge 2023"
         },
         {
             compImg: comp3,
-            name: "Selam Summer Open 2024"
+            name: "Selam Summer Open 2023"
         }
     ]
 
-
-
-
     return (
-        <div className='space-y-5'>
+        <div className='space-y-5 pb-5'>
             <h4 className="scroll-m-20 text-xl font-semibold tracking-tight border-b pb-2">
                 {title}
             </h4>
@@ -58,8 +55,8 @@ const Competitions = ({ title }) => {
                         ))
                     }
                 </CarouselContent>
-                <CarouselPrevious className="hidden md:flex" />
-                <CarouselNext className="hidden md:flex" />
+                <CarouselPrevious />
+                <CarouselNext />
             </Carousel>
         </div>
     )
