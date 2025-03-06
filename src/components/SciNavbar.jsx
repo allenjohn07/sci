@@ -62,7 +62,7 @@ export function SciNavbar() {
   }, []);
 
   return (
-    <div className="relative w-full shadow-sm">
+    <div className="relative w-full bg-white border-b">
       <Navbar className="rounded-none w-full shadow-none">
         <div className="flex items-center justify-between text-blue-gray-900">
           <Link to={"/"}>
@@ -80,11 +80,12 @@ export function SciNavbar() {
             </div>
           </Link>
           <div className="flex items-center justify-center">
-            <div className="my-2 md:my-4">
+            <div className="my-2 md:my-4 space-x-4">
               {/* <NavList /> */}
 
               {/* for coming soon */}
-              <Link className="hover:underline hover:underline-offset-2" to={"/about"}>about</Link>
+              <Link className="hover:underline hover:underline-offset-2" to={"/rankings"}>Rankings</Link>
+              <Link className="hover:underline hover:underline-offset-2" to={"/about"}>About</Link>
             </div>
           </div>
           {/* <IconButton
