@@ -14,15 +14,16 @@ const UpComingCompetitions = ({ upComingCompetitons }) => {
       <h4 className="scroll-m-20 text-xl font-semibold tracking-tight border-b pb-2">
         Upcoming Competitions
       </h4>
-      <Carousel>
+      {
+        upComingCompetitons.length > 0 ? <Carousel>
         <CarouselContent>
           {upComingCompetitons?.map((competition) => (
             <CarouselItem
-              key={competition.name}
+              key={competition.competitionId}
               className="basis-1/2 md:basis-1/3"
             >
               <CardComponent
-                compImg={`https://competition-posters.s3.us-west-2.amazonaws.com/${competition.compImg}`}
+                compImg={`https://competition-posters.s3.us-west-2.amazonaws.com/${competition.competitionId}.jpg`}
                 name={competition.name}
               />
             </CarouselItem>
@@ -30,7 +31,8 @@ const UpComingCompetitions = ({ upComingCompetitons }) => {
         </CarouselContent>
         <CarouselPrevious />
         <CarouselNext />
-      </Carousel>
+      </Carousel> : <p className="text-start text-muted-foreground">No upcoming competitions</p>
+      }
     </div>
   );
 };
